@@ -1,0 +1,157 @@
+$color-1: #39f;
+$color-2: complement($color-1);
+$break-small: 480px;
+$break-large: 1024px;
+$break-medium: 767px;
+
+body {
+  padding-top: 40px;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 400;
+}
+#logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+}
+#fb-root {
+  padding-top: 5px;
+}
+.navbar {
+  font-family: 'Lato', serif;
+}
+.navbar-brand {
+  padding-left: 50px;
+}
+.navbar-right {
+  padding-left: 10px;
+}
+.fa-ul li i {
+  text-align: center;
+  display: none;
+  @media screen and (max-width: $break-medium) {
+    display: inline;
+  }
+}
+.fa-li {
+  margin-top: 10px;
+  color: $color-1;
+}
+.fa-border {
+  color: $color-2;
+}
+h1, h2, h3, h4 {
+  font-family: 'Lato', serif;
+  font-weight: 700;
+}
+p {
+  font-size: 1.25em;
+  text-align: center;
+}
+a {
+  color: $color-1;
+}
+a:hover {
+  text-decoration: none;
+  color: $color-2;
+}
+a:visited{
+  color: darken($color-1, 10%);
+}
+.jumbotron {
+  background: url('../img/jumbotron-bg.jpg') top center no-repeat;
+  width: 100%;
+  height: 360px;
+  margin-bottom: 0;
+  h1, p {
+    color: #fff;
+  }
+}
+#profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 90px;
+}
+.page-header h2 {
+  text-align: center;
+  i {
+    margin-bottom: 10px;
+  }
+}
+
+.project .row {
+  margin: 10px;
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 5px;
+  h3, p {
+    text-align: right;
+    margin-right: 5px;
+  }
+  @media screen and (max-width: $break-medium) {
+    margin-left: 0;
+    margin-right: 0;
+    .col-sm-8 {
+      background: #eee;
+      border-top: 1px solid $color-2;
+    }
+    h3 {
+      margin-top: 0;
+      padding-top: 10px;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+}
+.project {
+  margin-bottom: 10px;
+  @media screen and (max-width: $break-medium) {
+    text-align: center;
+  }
+}
+.project-img {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+blockquote footer {
+    text-align: center;
+}
+.panel-footer {
+  background: #222;
+  margin-top: 100px;
+}
+.contact-info {
+  padding-bottom: 225px;
+}
+.contact-links  {
+  a {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+}
+footer .fa {
+  color: white;
+}
+footer small {
+  color: #ccc;
+}
+footer .fa:hover {
+  color: $color-2;
+}
+footer .fa:visited {
+  color: $color-1;
+}
+footer a {
+  padding: 10px;
+  @media screen and (min-width: $break-medium) {
+    padding: 20px;
+  }
+  @media screen and (min-width: $break-large) {
+    padding: 30px;
+  }
+}

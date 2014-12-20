@@ -1,0 +1,63 @@
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="40px" height="40px" viewBox="-4 -3.75 157.75 157.75" enable-background="new -4 -3.75 157.75 157.75"
+	 xml:space="preserve">
+<defs>
+	<style type="text/css">
+		.animate {
+			stroke-dasharray: 2000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 8s linear forwards;
+			-moz-animation: dash 8s linear forwards;
+			-o-animation: dash 8s linear forwards;
+			animation: dash 8s linear forwards;
+		}
+
+		#Layer_1:hover .animate {
+			fill: #39f;
+			stroke: #39f;
+			transition: .8s;
+		}
+
+		#Layer_1.clickit .animate {
+			fill: #fff;
+			stroke: #222;
+		}
+
+		@-webkit-keyframes dash {
+			from {
+				stroke-dashoffset: 2000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	</style>
+
+	<script type="text/javascript">
+		var clicker = document.querySelector('#Layer_1');
+		clicker.addEventListener('click', function() {
+			this.classList.toggle('clickit')
+		});
+
+	</script>
+</defs>
+<g>
+	<g>
+		<path class="animate" fill="#222" stroke="#fff" stroke-width="2" stroke-miterlimit="5" d="M150,0h-29.839H70.166h-30.17v29.505v80.499h30.006
+			V30.006h49.992V150H150V29.505V0L150,0z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="animate" fill="#222" stroke="#fff" stroke-width="2" stroke-miterlimit="5" d="M109.996,41.006H79.993v30.001h30.003V41.006
+			L109.996,41.006z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="animate" fill="#222" stroke="#fff" stroke-width="2" stroke-miterlimit="5" d="M30.004,0H0v119.508V150h30.167h79.837v-20.502
+			v-9.99v-39.51H79.998v39.996H30.004V0L30.004,0z"/>
+	</g>
+</g>
+</svg>
